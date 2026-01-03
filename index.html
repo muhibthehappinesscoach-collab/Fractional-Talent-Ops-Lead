@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractional Talent Ops Leader | Muhibullah Sahibjan</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 60px 20px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 40px; }
+        h1 { font-size: 2.5em; color: #2c3e50; margin-bottom: 10px; }
+        .tagline { font-size: 1.3em; color: #7f8c8d; margin-bottom: 30px; }
+        .distinct { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .distinct div { background: #3498db; color: white; padding: 15px 25px; border-radius: 30px; font-weight: bold; }
+        nav { display: flex; justify-content: center; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; }
+        .tab { background: #ecf0f1; padding: 15px 30px; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
+        .tab.active { background: #3498db; color: white; }
+        .tab-content { display: none; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .tab-content.active { display: block; }
+        .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service, .case { background: #f8f9fa; padding: 25px; border-radius: 15px; border-left: 5px solid #3498db; }
+        .case h3 { color: #2c3e50; margin-bottom: 15px; }
+        ul { margin: 15px 0; padding-left: 20px; }
+        .cta { text-align: center; background: linear-gradient(135deg, #3498db, #2980b9); color: white; padding: 40px; border-radius: 20px; }
+        .cta form { max-width: 500px; margin: 20px auto; }
+        input, textarea { width: 100%; padding: 15px; margin: 10px 0; border: none; border-radius: 10px; }
+        button { background: #27ae60; color: white; padding: 15px 40px; border: none; border-radius: 10px; font-size: 1.1em; cursor: pointer; transition: background 0.3s; }
+        button:hover { background: #229954; }
+        @media (max-width: 768px) { h1 { font-size: 2em; } nav { flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fractional Talent Operations Leader</h1>
+            <p class="tagline">Helping Staffing Firm Founders Fix Recruitment Delivery & Recruiter Productivity</p>
+            <p>For founders and leadership teams who have outgrown informal systems</p>
+            <div class="distinct">
+                <div>Psychologically realistic</div>
+                <div>Systems-first</div>
+                <div>Behavior-aware</div>
+            </div>
+        </header>
+        
+        <nav>
+            <button class="tab active" onclick="showTab('services')">Services</button>
+            <button class="tab" onclick="showTab('cases')">Cases</button>
+            <button class="tab" onclick="showTab('about')">About</button>
+            <button class="tab" onclick="showTab('cta')">Get Started</button>
+        </nav>
+        
+        <div id="services" class="tab-content active">
+            <h2>Service Lines</h2>
+            <div class="section-grid">
+                <div class="service">
+                    <h3>Fractional Retainer</h3>
+                    <p>Senior leadership for delivery stabilization. 10–20 hrs/week, 3–12 months.</p>
+                </div>
+                <div class="service">
+                    <h3>60–90 Day Sprints</h3>
+                    <p>Targeted fixes: audits, role redesign, hiring workflows.</p>
+                </div>
+                <div class="service">
+                    <h3>Assessments & Workshops</h3>
+                    <p>Systems diagnostics, accountability mapping, behavioral audits.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cases" class="tab-content">
+            <h2>Real Results</h2>
+            <div class="section-grid">
+                <div class="case">
+                    <h3>IT Staffing Firm (20 recruiters)</h3>
+                    <ul>
+                        <li><strong>Problems:</strong> 40% churn, fuzzy roles.</li>
+                        <li><strong>Implemented:</strong> Role framework, cadences.</li>
+                        <li><strong>Outcomes:</strong> +35% consistency, churn to 15%.</li>
+                    </ul>
+                </div>
+                <div class="case">
+                    <h3>Pro Services Agency (12 team)</h3>
+                    <ul>
+                        <li><strong>Problems:</strong> Founder overload, 60-day hires.</li>
+                        <li><strong>Implemented:</strong> Decision matrix, metrics dashboard.</li>
+                        <li><strong>Outcomes:</strong> Hires to 30 days, +18% revenue.</li>
+                    </ul>
+                </div>
+                <div class="case">
+                    <h3>Global Recruiters (35 team)</h3>
+                    <ul>
+                        <li><strong>Problems:</strong> Handoff delays, unclear metrics.</li>
+                        <li><strong>Implemented:</strong> Rhythms, coaching.</li>
+                        <li><strong>Outcomes:</strong> Delays -50%, productivity +22%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about" class="tab-content">
+            <h2>About Muhibullah</h2>
+            <p>Decade of recruitment delivery leadership (incl. Manpower). Master NLP/CBT coach applying behavioral science to ops systems for staffing founders. Remote, global for 5–50 teams. Founder relief through crisp workflows and rhythms.</p>
+        </div>
+        
+        <div id="cta" class="tab-content">
+            <div class="cta">
+                <h2>Next Step</h2>
+                <p>Share your biggest delivery bottleneck for a no-obligation scan.</p>
+                <form>
+                    <input type="email" placeholder="Your email" required>
+                    <textarea placeholder="Briefly describe your needs (e.g., churn, hiring delays, role confusion)" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <p>Or email: [your-email@example.com]</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            // Show selected
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+        // Form submit (demo alert)
+        document.querySelector('form').addEventListener('submit', e => {
+            e.preventDefault();
+            alert('Message sent! Expect a reply within 24 hours.');
+        });
+    </script>
+</body>
+</html>
